@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda de Tenis - Footer Profesional</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: white; 
+        }
+
+        main {
+            flex: 1; 
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        .sitio-footer {
+            background-color: #111111;
+            color: #FFFFFF;
+            padding: 50px 60px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: flex-start; 
+            position: relative; 
+            border-top: 3px solid #333333; 
+        }
+
+        .footer-autores {
+            flex: 1;
+            max-width: 300px; 
+        }
+
+        .titulo-autores {
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #888888;
+            display: block; 
+        }
+
+        .footer-autores ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-autores li {
+            font-size: 0.9em;
+            margin-bottom: 8px; 
+            line-height: 1.5;
+            color: #CCCCCC;
+        }
+
+        .footer-central {
+            flex: 2; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px; 
+        }
+
+        .nombre-proyecto {
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            font-size: 2.8em;
+            margin: 0 0 20px 0; 
+            font-weight: 900; 
+            text-transform: uppercase;
+            letter-spacing: 2px; 
+        }
+
+        .contacto-bloque {
+            font-size: 0.9em;
+        }
+
+        .contacto-label {
+            margin: 0 0 5px 0;
+            color: #888888; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8em;
+        }
+
+        .contacto-email {
+            margin: 0;
+            font-weight: normal;
+            font-size: 1.1em;
+            color: #FFFFFF;
+        }
+
+        .footer-derecha-vacia {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .sitio-footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .footer-autores, .footer-central, .footer-derecha-vacia {
+                max-width: 100%;
+                width: 100%;
+                margin: 15px 0;
+            }
+
+            .footer-autores ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .footer-autores li {
+                margin: 5px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <main>
+    
+    </main>
+
+    <footer class="sitio-footer">
+        
+        <div class="footer-autores">
+            <span class="titulo-autores">Equipo de Desarrollo</span>
+            <ul>
+                <li>Alejandro Gonzalez</li>
+                <li>Erick García</li>
+                <li>Daniel Aguilar</li>
+                <li>Alejandro Ruiz</li>
+                <li>Angel Arturo</li>
+                <li>Francisco Ortiz</li>
+                <li>Chris Hernandez</li>
+                <li>Edwin Sanchez</li>
+                <li>Diego</li>
+            </ul>
+        </div>
+
+        <div class="footer-central">
+            <h2 class="nombre-proyecto">Wolves</h2>
+            
+            <div class="contacto-bloque">
+                <p class="contacto-label">Soporte y Contacto</p>
+                <p class="contacto-email">wolves@tienda.com</p>
+            </div>
+        </div>
+
+        <div class="footer-derecha-vacia"></div>
+
+    </footer>
+
     
 </body>
 </html>
