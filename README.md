@@ -1,2 +1,2 @@
 🏕️ Lobos de Montaña
-A lightweight ecommerce platform focused on camping gear and outdoor equipment.
+Una plataforma de comercio electrónico liviana centrada en equipos para acampar y equipos para actividades al aire libre.
