@@ -1,0 +1,21 @@
+
+footer {
+  width: 100%;
+  background: #ddd; 
+  padding: 40px 0;  
+}
+
+.footer-container {
+  display: grid; 
+
+  grid-template-columns: repeat(3, 1fr); 
+
+  gap: 40px; 
+
+  padding: 0 80px; 
+}
+
+
+.footer-column {
+  width: 100%;
+}
