@@ -22,61 +22,7 @@
 </head>
 <body>
 
-  <nav class="header">
-        <div class="logo">
-            <img src="Mi_Carrito_Blanco.png" alt="Lobos de la Montaña">
-            <span>Lobos de la Montaña</span>
-        </div>
-        <ul class="links">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Catálogo</a></li>
-            <li><a href="">Destacados</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-        <div class="carrito">
-            <img src="Mi_Carrito_Blanco.png" alt="Carrito de compras">
-            <span>Mi Carrito</span>
-        </div>
-    </nav>
-
-    <!-- ============================================================
-         [INICIO] Branch: Pagina-de-Inicio-Ale | Autor: Ale
-         Descripcion: Navbar principal de la landing page "Lobos de
-         Montana". Incluye logo/marca, navegacion responsive con
-         Bootstrap navbar-toggler para movil, links a las secciones
-         internas (Inicio, Destacados, Catalogo) y boton de carrito.
-    ============================================================ -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inicio">
-        <div class="container">
-            <a class="navbar-brand navbar-inicio__marca" href="#slogan">
-                <i class="bi bi-snow2"></i> Lobos de Montaña
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarInicio">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarInicio">
-                <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#slogan">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#productos-destacados">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#catalogo">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-inicio__carrito" href="#">
-                            <i class="bi bi-cart3"></i>
-                            <span class="navbar-inicio__carrito-count">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- [FIN] Navbar - Pagina-de-Inicio-Ale -->
+    <!-- Navbar removido - sera implementado por otro dev -->
 
     <!-- ============================================================
          [INICIO] Branch: Indez-Slogan-Chris | Autor: Chris
@@ -127,9 +73,8 @@
                             <h3 class="producto-card__nombre">Botas de Caña Media</h3>
                             <p class="producto-card__descripcion">Soporte y tracción para terrenos irregulares. Diseñadas para caminatas de media y larga distancia.</p>
                             <div class="producto-card__precio mb-3">$1,299 MXN</div>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -146,9 +91,8 @@
                             <h3 class="producto-card__nombre">Sudadera Impermeable</h3>
                             <p class="producto-card__descripcion">Protección contra lluvia y viento sin sacrificar transpirabilidad. Ideal para senderismo en cualquier clima.</p>
                             <div class="producto-card__precio mb-3">$899 MXN</div>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -165,9 +109,8 @@
                             <h3 class="producto-card__nombre">Bastones de Senderismo</h3>
                             <p class="producto-card__descripcion">Ultraligeros y ajustables. Reducen el impacto en rodillas y mejoran tu estabilidad en cualquier terreno.</p>
                             <div class="producto-card__precio mb-3">$649 MXN</div>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -210,9 +153,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Mochila de Hidratación 15L</h3>
                             <p class="catalogo-card__precio">$1,499 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -227,9 +169,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Gorra Protección UV</h3>
                             <p class="catalogo-card__precio">$349 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -244,9 +185,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Pantalón Convertible Trekking</h3>
                             <p class="catalogo-card__precio">$749 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -261,9 +201,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Guantes Térmicos Táctiles</h3>
                             <p class="catalogo-card__precio">$499 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -278,9 +217,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Cantimplora Térmica 750ml</h3>
                             <p class="catalogo-card__precio">$399 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
@@ -295,9 +233,8 @@
                         <div class="card-body d-flex flex-column text-center">
                             <h3 class="catalogo-card__nombre">Gafas Deportivas Polarizadas</h3>
                             <p class="catalogo-card__precio">$599 MXN</p>
-                            <div class="mt-auto d-flex gap-2">
-                                <button class="btn btn-carrito flex-fill"><i class="bi bi-cart-plus"></i> Agregar</button>
-                                <button class="btn btn-comprar flex-fill"><i class="bi bi-bag-check"></i> Comprar</button>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
                             </div>
                         </div>
                     </article>
