@@ -1,0 +1,52 @@
+#productos{
+    text-align: center;
+
+}
+
+.img-uniforme {
+  height: 200px;
+  object-fit: cover;
+}
+
+body {
+  background-color: #161F28;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #1E3765;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+
+.card-text {
+  color: #D3DFE8;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* máximo 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.list-group-item {
+  background-color: #1E3765;
+  color: #ffffff;
+  border-color: #A9C0DE33;
+}
+
+.card-link {
+  color: #A9C0DE;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
