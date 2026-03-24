@@ -92,7 +92,7 @@ html {
 }
 .about{
     padding: 60px 20px;
-    background: #a9c0de;
+    background: white;
 }
 
 .about-container{
@@ -114,7 +114,7 @@ html {
 }
 
 .about-text button{
-    background: rgb(53, 160, 4);
+    background: #a9c0de;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -122,7 +122,7 @@ html {
 }
 
 .about-text button:hover{
-    background: darkgreen;
+    background: rgb(131, 160, 223);
     transform: scale(1.1);
 }
 
@@ -143,7 +143,7 @@ html {
 
 .card-about:hover{
     transform: translateY(-10px) scale(1.05);
-    background: #c1e0bc;
+    background: #a9c0de;
 }
 
 .hidden{
