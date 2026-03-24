@@ -1,12 +1,305 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobos de Montaña — Equipo de Senderismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
+    <nav class="header">
+        <div class="logo">
+            <img src="LOGO.png" alt="Lobos de la Montaña">
+            <span>Lobos de la Montaña</span>
+        </div>
+        <ul class="links">
+            <li><a href="#slogan">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#productos-destacados">Destacados</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="carrito">
+             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#formModal">
+             <img src="carrito.png" alt="Carrito de compras">
+             </button>
+            <span>Mi Carrito</span>
+        </div>
+    </nav>
+    <div
+          class="modal fade"
+          id="formModal"
+          tabindex="-1"
+          aria-labelledby="formModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">
+                  <p class="text-center">¡Tienda de lobos!</p>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Aquí va tu formulario -->
+                <p class="text-center">TIENDA</p>
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label"
+                      >Nombre completo</label
+                    >
+                    <input type="email" class="form-control" id="inputEmail4" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label"
+                      >N. de tarjeta de debito/credito</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword4"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress"
+                      placeholder="1234 Main St"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label"
+                      >Address 2</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress2"
+                      placeholder="Apartment, studio, or floor"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>Iztapalapa</option>
+                      <option>Neza</option>
+                      <option>lLos pinos</option>
+                      <option>Jacinto</option>
+                      <option>Texcoco</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" />
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="gridCheck"
+                      />
+                      <label class="form-check-label" for="gridCheck">
+                        Aceptar terminos y condiciones.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      ¡Comprar!
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <section id="slogan" class="hero-slogan">
+        <div class="hero-slogan__content text-center">
+            <h1 class="hero-slogan__marca">Lobos de Montaña</h1>
+            <p class="hero-slogan__texto">Conquista cada sendero — equipo que resiste como tú</p>
+            <a href="#productos-destacados" class="btn btn-lg hero-slogan__cta">Explorar productos</a>
+
+        </div>
+    </section>
+
+    <section id="productos-destacados" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="productos-destacados__titulo">Productos Destacados</h2>
+                <p class="productos-destacados__slogan">Lo esencial para tu próxima aventura</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card producto-card h-100">
+                        <div class="producto-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&fit=crop" class="card-img-top" alt="Botas de Caña Media">
+                            <span class="producto-card__badge">Nuevo</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="producto-card__nombre">Botas de Caña Media</h3>
+                            <p class="producto-card__descripcion">Soporte y tracción para terrenos irregulares. Diseñadas para caminatas de media y larga distancia.</p>
+                            <div class="producto-card__precio mb-3">$1,299 MXN</div>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card producto-card h-100">
+                        <div class="producto-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&fit=crop" class="card-img-top" alt="Sudadera Impermeable">
+                            <span class="producto-card__badge">Popular</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="producto-card__nombre">Sudadera Impermeable</h3>
+                            <p class="producto-card__descripcion">Protección contra lluvia y viento sin sacrificar transpirabilidad. Ideal para senderismo en cualquier clima.</p>
+                            <div class="producto-card__precio mb-3">$899 MXN</div>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card producto-card h-100">
+                        <div class="producto-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&fit=crop" class="card-img-top" alt="Bastones de Senderismo">
+                            <span class="producto-card__badge">Esencial</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="producto-card__nombre">Bastones de Senderismo</h3>
+                            <p class="producto-card__descripcion">Ultraligeros y ajustables. Reducen el impacto en rodillas y mejoran tu estabilidad en cualquier terreno.</p>
+                            <div class="producto-card__precio mb-3">$649 MXN</div>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="catalogo__titulo">Catálogo</h2>
+                <p class="catalogo__subtitulo">Explora nuestro equipo para cada aventura</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&fit=crop" class="card-img-top" alt="Mochila de Hidratación 15L">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Mochila de Hidratación 15L</h3>
+                            <p class="catalogo-card__precio">$1,499 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400&fit=crop" class="card-img-top" alt="Gorra Protección UV">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Gorra Protección UV</h3>
+                            <p class="catalogo-card__precio">$349 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&fit=crop" class="card-img-top" alt="Pantalón Convertible Trekking">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Pantalón Convertible Trekking</h3>
+                            <p class="catalogo-card__precio">$749 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&fit=crop" class="card-img-top" alt="Guantes Térmicos Táctiles">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Guantes Térmicos Táctiles</h3>
+                            <p class="catalogo-card__precio">$499 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&fit=crop" class="card-img-top" alt="Cantimplora Térmica 750ml">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Cantimplora Térmica 750ml</h3>
+                            <p class="catalogo-card__precio">$399 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card catalogo-card h-100">
+                        <div class="catalogo-card__imagen">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&fit=crop" class="card-img-top" alt="Gafas Deportivas Polarizadas">
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h3 class="catalogo-card__nombre">Gafas Deportivas Polarizadas</h3>
+                            <p class="catalogo-card__precio">$599 MXN</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-comprar w-100"><i class="bi bi-bag-check"></i> Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="about" id="about">
       <div class="about-container">
         <div class="about-text hidden">
@@ -28,12 +321,164 @@
 
           <div class="card-about hidden">
             <h3>Confianza</h3>
-            <p>clientes satisfechos en todo el país.</p>
+            <p>Clientes satisfechos en todo el país.</p>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <section id="contacto" class="contacto py-5" aria-labelledby="contacto-titulo">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 id="contacto-titulo" class="contacto__titulo">Contacto</h2>
+                <p class="contacto__subtitulo">Dudas, pedidos o sugerencias — te respondemos pronto</p>
+            </div>
+            <div class="row g-4 g-lg-5 align-items-start">
+                <div class="col-lg-5">
+                    <p class="contacto-info__lead">
+                        Estamos para ayudarte con tu equipo de montaña. Escríbenos por correo o usa el formulario.
+                    </p>
+                    <ul class="contacto-info__list">
+                        <li>
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
+                            <span>
+                                <strong>Correo</strong><br>
+                                <a href="mailto:wolves@tienda.com">wolves@tienda.com</a>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone" aria-hidden="true"></i>
+                            <span>
+                                <strong>Teléfono</strong><br>
+                                <a href="tel:+525512345678">+52 55 1234 5678</a>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock" aria-hidden="true"></i>
+                            <span>
+                                <strong>Horario</strong><br>
+                                Lun–Vie 9:00–18:00 · Sáb 10:00–14:00 (GMT-6)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form id="formulario-contacto" class="contacto-form" novalidate>
+                        <div
+                            id="contacto-feedback"
+                            class="contacto-form__feedback d-none"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="contacto-nombre" class="form-label">Nombre</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="contacto-nombre"
+                                    name="nombre"
+                                    autocomplete="name"
+                                    required
+                                    minlength="2"
+                                    placeholder="Tu nombre"
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contacto-email" class="form-label">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="contacto-email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                    placeholder="correo@ejemplo.com"
+                                />
+                            </div>
+                            <div class="col-12">
+                                <label for="contacto-asunto" class="form-label">Asunto</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="contacto-asunto"
+                                    name="asunto"
+                                    maxlength="120"
+                                    placeholder="Pedido, garantía, colaboración…"
+                                />
+                            </div>
+                            <div class="col-12">
+                                <label for="contacto-mensaje" class="form-label">Mensaje</label>
+                                <textarea
+                                    class="form-control"
+                                    id="contacto-mensaje"
+                                    name="mensaje"
+                                    rows="5"
+                                    required
+                                    minlength="10"
+                                    placeholder="Cuéntanos en qué podemos ayudarte"
+                                ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sitio-footer">
+        
+        <div class="footer-autores">
+            <span class="titulo-autores">Equipo de Desarrollo</span>
+            <ul>
+                <li>Alejandro Gonzalez</li>
+                <li>Erick García</li>
+                <li>Daniel Aguilar</li>
+                <li>Alejandro Ruiz</li>
+                <li>Angel Arturo</li>
+                <li>Francisco Ortiz</li>
+                <li>Chris Hernandez</li>
+                <li>Edwin Sanchez</li>
+                <li>Diego</li>
+            </ul>
+        </div>
+
+        <div class="footer-central">
+            <h2 class="nombre-proyecto">LOBOS DE MONTAÑA</h2>
+            
+            <div class="contacto-bloque">
+                <p class="contacto-label">Soporte y Contacto</p>
+                <p class="contacto-email">wolves@tienda.com</p>
+            </div>
+        </div>
+
+        <div class="footer-derecha-vacia">
+
+          <h3>ACTIVIDADES</h3>
+            <ul>
+                <li>Senderismo</li>
+                <li>Montañismo</li>
+                <li>Camping familiar</li>
+                <li>Supervivencia</li>
+            </ul>
+
+          <span>Configuración de cookies</span>
+          <span>|</span>
+          <span>Términos y condiciones</span>
+          <span>|</span>
+          <span>Uso del sitio</span>
+          <span>|</span>
+          <span>Privacidad</span>
+          <span>|</span>
+          <span>Seleccionar país</span>
+        </div>
+
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
