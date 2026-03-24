@@ -327,7 +327,109 @@
       </div>
     </section>
 
-    <footer id="contacto" class="sitio-footer">
+    <section id="contacto" class="contacto py-5" aria-labelledby="contacto-titulo">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 id="contacto-titulo" class="contacto__titulo">Contacto</h2>
+                <p class="contacto__subtitulo">Dudas, pedidos o sugerencias — te respondemos pronto</p>
+            </div>
+            <div class="row g-4 g-lg-5 align-items-start">
+                <div class="col-lg-5">
+                    <p class="contacto-info__lead">
+                        Estamos para ayudarte con tu equipo de montaña. Escríbenos por correo o usa el formulario.
+                    </p>
+                    <ul class="contacto-info__list">
+                        <li>
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
+                            <span>
+                                <strong>Correo</strong><br>
+                                <a href="mailto:wolves@tienda.com">wolves@tienda.com</a>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone" aria-hidden="true"></i>
+                            <span>
+                                <strong>Teléfono</strong><br>
+                                <a href="tel:+525512345678">+52 55 1234 5678</a>
+                            </span>
+                        </li>
+                        <li>
+                            <i class="bi bi-clock" aria-hidden="true"></i>
+                            <span>
+                                <strong>Horario</strong><br>
+                                Lun–Vie 9:00–18:00 · Sáb 10:00–14:00 (GMT-6)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form id="formulario-contacto" class="contacto-form" novalidate>
+                        <div
+                            id="contacto-feedback"
+                            class="contacto-form__feedback d-none"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="contacto-nombre" class="form-label">Nombre</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="contacto-nombre"
+                                    name="nombre"
+                                    autocomplete="name"
+                                    required
+                                    minlength="2"
+                                    placeholder="Tu nombre"
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contacto-email" class="form-label">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="contacto-email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                    placeholder="correo@ejemplo.com"
+                                />
+                            </div>
+                            <div class="col-12">
+                                <label for="contacto-asunto" class="form-label">Asunto</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="contacto-asunto"
+                                    name="asunto"
+                                    maxlength="120"
+                                    placeholder="Pedido, garantía, colaboración…"
+                                />
+                            </div>
+                            <div class="col-12">
+                                <label for="contacto-mensaje" class="form-label">Mensaje</label>
+                                <textarea
+                                    class="form-control"
+                                    id="contacto-mensaje"
+                                    name="mensaje"
+                                    rows="5"
+                                    required
+                                    minlength="10"
+                                    placeholder="Cuéntanos en qué podemos ayudarte"
+                                ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sitio-footer">
         
         <div class="footer-autores">
             <span class="titulo-autores">Equipo de Desarrollo</span>
