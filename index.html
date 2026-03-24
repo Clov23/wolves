@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Tenis - Footer Profesional</title>
+    <title>LOBOS DE MONTAÑA - Contacto</title>
     
     <style>
         body {
@@ -16,34 +16,28 @@
             background-color: white; 
         }
 
-        main {
-            flex: 1; 
-            padding: 20px;
-            font-size: 1.2em;
-        }
-
         .sitio-footer {
             background-color: #111111;
             color: #FFFFFF;
-            padding: 50px 60px;
+            padding: 80px 60px;
             display: flex;
             justify-content: space-between; 
             align-items: flex-start; 
-            position: relative; 
             border-top: 3px solid #333333; 
+            gap: 40px;
+            margin-top: auto;
         }
 
-        .footer-autores {
+        .footer-col {
             flex: 1;
-            max-width: 300px; 
         }
 
-        .titulo-autores {
+        .titulo-seccion {
             font-weight: bold;
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-transform: uppercase; 
-            letter-spacing: 1px;
-            margin-bottom: 15px;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
             color: #888888;
             display: block; 
         }
@@ -57,88 +51,94 @@
         .footer-autores li {
             font-size: 0.9em;
             margin-bottom: 8px; 
-            line-height: 1.5;
             color: #CCCCCC;
         }
 
         .footer-central {
-            flex: 2; 
+            flex: 1.5; 
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px; 
         }
 
         .nombre-proyecto {
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            font-size: 2.8em;
-            margin: 0 0 20px 0; 
+            font-size: 2.5em;
+            margin: 0 0 15px 0; 
             font-weight: 900; 
             text-transform: uppercase;
-            letter-spacing: 2px; 
-        }
-
-        .contacto-bloque {
-            font-size: 0.9em;
+            letter-spacing: 3px; 
         }
 
         .contacto-label {
             margin: 0 0 5px 0;
             color: #888888; 
             text-transform: uppercase;
+            font-size: 0.75em;
             letter-spacing: 1px;
-            font-size: 0.8em;
         }
 
         .contacto-email {
-            margin: 0;
-            font-weight: normal;
             font-size: 1.1em;
             color: #FFFFFF;
         }
 
-        .footer-derecha-vacia {
-            flex: 1;
-            max-width: 300px;
+        .footer-formulario {
+            max-width: 350px;
         }
 
-        @media (max-width: 768px) {
+        .form-contacto {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-contacto input, .form-contacto textarea {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 12px;
+            font-size: 0.9em;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .form-contacto input:focus, .form-contacto textarea:focus {
+            border-color: #777;
+        }
+
+        .form-contacto button {
+            background-color: #FFFFFF;
+            color: #000;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-contacto button:hover {
+            background-color: #bbbbbb;
+        }
+
+        @media (max-width: 900px) {
             .sitio-footer {
                 flex-direction: column;
+                align-items: center;
                 text-align: center;
                 padding: 40px 20px;
             }
-
-            .footer-autores, .footer-central, .footer-derecha-vacia {
-                max-width: 100%;
+            .footer-formulario {
                 width: 100%;
-                margin: 15px 0;
-            }
-
-            .footer-autores ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .footer-autores li {
-                margin: 5px 12px;
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <main>
-    
-    </main>
-
     <footer class="sitio-footer">
         
-        <div class="footer-autores">
-            <span class="titulo-autores">Equipo de Desarrollo</span>
+        <div class="footer-col footer-autores">
+            <span class="titulo-seccion">Equipo de Desarrollo</span>
             <ul>
                 <li>Alejandro Gonzalez</li>
                 <li>Erick García</li>
@@ -152,19 +152,26 @@
             </ul>
         </div>
 
-        <div class="footer-central">
+        <div class="footer-col footer-central">
             <h2 class="nombre-proyecto">LOBOS DE MONTAÑA</h2>
-            
             <div class="contacto-bloque">
                 <p class="contacto-label">Soporte y Contacto</p>
                 <p class="contacto-email">wolves@tienda.com</p>
             </div>
         </div>
 
-        <div class="footer-derecha-vacia"></div>
+        <div class="footer-col footer-formulario">
+            <span class="titulo-seccion">Contacto Directo</span>
+            <form class="form-contacto">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono">
+                <textarea placeholder="Mensaje..." rows="3" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 
     </footer>
 
-    
 </body>
 </html>
