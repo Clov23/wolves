@@ -812,7 +812,11 @@
       function init() {
         overlay = document.createElement('div');
         overlay.id = 'tour-overlay';
-        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(22,31,40,0.82);z-index:10000;transition:clip-path 0.4s ease;';
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(22,31,40,0.82);z-index:10000;transition:clip-path 0.4s ease;cursor:pointer;';
+        overlay.addEventListener('click', function(e) {
+          if (e.target.closest('#tour-panel') || e.target.closest('button')) return;
+          window.__tourNext();
+        });
         document.body.appendChild(overlay);
 
         panel = document.createElement('div');
